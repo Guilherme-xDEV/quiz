@@ -105,6 +105,7 @@ h1 {
   #caixa-introducao {
     width: 95%; /* Usa quase toda a largura */
     padding: 15px; /* Reduz padding */
+    min-height: auto; /* Ajusta altura automaticamente */
   }
 
   h1 {
@@ -114,7 +115,7 @@ h1 {
 
   .button-container {
     flex-direction: column; /* Empilha botões verticalmente */
-    gap: 20px; /* Aumentado para espaçamento mais visível */
+    gap: 15px; /* Espaçamento reduzido */
     align-items: center; /* Centraliza botões */
   }
 
@@ -122,29 +123,5 @@ h1 {
     font-size: 12px; /* Reduz tamanho da fonte */
     padding: 10px 20px; /* Reduz padding */
     max-width: 250px; /* Ajusta largura máxima */
-    margin: 10px 0; /* Margem vertical para espaçamento extra */
-  }
-}
-
-/* Media Query para telas muito pequenas (ex.: smartphones antigos) */
-@media (max-width: 400px) {
-  #caixa-introducao {
-    width: 98%; /* Usa quase toda a largura */
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 16px; /* Ainda menor para telas pequenas */
-    margin-bottom: 15px;
-  }
-
-  .button-container {
-    gap: 15px; /* Espaçamento reduzido, mas ainda visível */
-  }
-
-  .button-styler {
-    font-size: 11px;
-    padding: 8px 16px;
-    max-width: 200px;
   }
 }
