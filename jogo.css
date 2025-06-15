@@ -14,7 +14,6 @@ body {
     width: 90%; /* Ocupa boa parte da largura */
     min-height: 80vh; /* Tamanho vertical grande */
     margin: 10px auto; /* Reduz margem para mostrar mais do fundo */
-    background-image: url('https://i.imgur.com/1z5Z2bH.png');
     background-size: cover;
     background-position: center;
     background-color: rgb(25, 204, 195, 0.85);
