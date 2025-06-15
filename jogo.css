@@ -11,9 +11,10 @@ body {
 }
 
 #pseudo-background {
-    width: 90%; /* Mais largo para ocupar espaço */
-    min-height: 80vh; /* Aumenta o tamanho vertical */
-    margin: 20px auto; /* Reduz margem no topo */
+    width: 90%; /* Ocupa boa parte da largura */
+    min-height: 80vh; /* Tamanho vertical grande */
+    margin: 10px auto; /* Reduz margem para mostrar mais do fundo */
+    background-image: url('https://i.imgur.com/1z5Z2bH.png');
     background-size: cover;
     background-position: center;
     background-color: rgb(25, 204, 195, 0.85);
@@ -21,17 +22,17 @@ body {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: flex-start; /* Alinha conteúdo ao topo */
-    padding: 20px;
+    padding: 10px; /* Reduz padding para mostrar mais do fundo */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
 }
 
 .quiz-container {
     background-color: #fff;
-    padding: 30px; /* Aumenta padding para mais espaço interno */
-    margin: 20px; /* Margem interna */
-    width: 100%; /* Usa toda a largura disponível */
+    padding: 30px; /* Mais espaço interno */
+    margin: 10px; /* Reduz margem interna */
+    width: 98%; /* Usa quase toda a largura do pseudo-background */
     max-width: 800px; /* Limita largura máxima */
-    min-height: 400px; /* Garante tamanho vertical mínimo */
+    min-height: 80%; /* Ocupa 80% da altura do pseudo-background */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -41,12 +42,12 @@ body {
 }
 
 #pergunta {
-    font-size: 20px; /* Aumenta tamanho da fonte da pergunta */
-    margin-bottom: 20px; /* Espaço abaixo da pergunta */
+    font-size: 24px; /* Aumenta tamanho da fonte da pergunta */
+    margin-bottom: 25px; /* Mais espaço abaixo da pergunta */
 }
 
 .status {
-    margin-bottom: 20px; /* Aumenta espaço abaixo da barra de progresso */
+    margin-bottom: 25px; /* Mais espaço abaixo da barra de progresso */
 }
 
 #barra-progresso {
@@ -68,9 +69,9 @@ body {
 .opcao button {
     display: block;
     width: 100%;
-    margin: 12px 0; /* Aumenta margem vertical */
-    padding: 12px; /* Aumenta padding para botões maiores */
-    font-size: 18px; /* Aumenta tamanho da fonte */
+    margin: 15px 0; /* Aumenta margem vertical */
+    padding: 15px; /* Aumenta padding para botões maiores */
+    font-size: 20px; /* Aumenta tamanho da fonte */
     cursor: pointer;
     border: none;
     border-radius: 5px;
@@ -83,14 +84,14 @@ body {
 }
 
 #resultado {
-    margin-top: 20px;
+    margin-top: 25px;
     font-weight: bold;
-    font-size: 18px; /* Aumenta tamanho da fonte */
+    font-size: 20px; /* Aumenta tamanho da fonte */
 }
 
 #pontuacao {
     font-weight: bold;
-    font-size: 18px; /* Aumenta tamanho da fonte */
+    font-size: 20px; /* Aumenta tamanho da fonte */
 }
 
 @keyframes pulse {
@@ -149,34 +150,34 @@ body {
     #pseudo-background {
         width: 95%; /* Usa quase toda a largura */
         min-height: 85vh; /* Aumenta tamanho vertical */
-        margin: 10px auto; /* Reduz margem no topo */
-        padding: 15px;
+        margin: 5px auto; /* Menos margem para mostrar fundo */
+        padding: 5px; /* Menos padding para mostrar fundo */
     }
 
     .quiz-container {
-        width: 95%; /* Usa quase toda a largura */
-        min-height: 500px; /* Aumenta tamanho vertical */
-        margin: 10px;
-        padding: 20px;
+        width: 98%; /* Usa quase toda a largura */
+        min-height: 85%; /* Mais proporcional ao pseudo-background */
+        margin: 5px; /* Reduz margem */
+        padding: 20px; /* Ajusta padding */
     }
 
     #pergunta {
-        font-size: 18px; /* Ajusta tamanho da fonte */
-        margin-bottom: 15px;
+        font-size: 20px; /* Ajusta tamanho da fonte */
+        margin-bottom: 20px;
     }
 
     .opcao button {
-        font-size: 16px; /* Ajusta tamanho da fonte */
-        padding: 10px;
-        margin: 10px 0;
+        font-size: 18px; /* Ajusta tamanho da fonte */
+        padding: 12px;
+        margin: 12px 0;
     }
 
     #pontuacao, #resultado {
-        font-size: 16px; /* Ajusta tamanho da fonte */
+        font-size: 18px; /* Ajusta tamanho da fonte */
     }
 
     .status {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 }
 
@@ -185,29 +186,30 @@ body {
     #pseudo-background {
         width: 98%; /* Usa quase toda a largura */
         min-height: 90vh; /* Ocupa mais espaço vertical */
-        padding: 10px;
+        margin: 5px auto;
+        padding: 5px;
     }
 
     .quiz-container {
         width: 98%;
-        min-height: 450px; /* Ajusta tamanho vertical */
+        min-height: 90%; /* Mais proporcional ao pseudo-background */
         margin: 5px;
         padding: 15px;
     }
 
     #pergunta {
-        font-size: 16px;
-        margin-bottom: 12px;
+        font-size: 18px;
+        margin-bottom: 15px;
     }
 
     .opcao button {
-        font-size: 14px;
-        padding: 8px;
-        margin: 8px 0;
+        font-size: 16px;
+        padding: 10px;
+        margin: 10px 0;
     }
 
     #pontuacao, #resultado {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
