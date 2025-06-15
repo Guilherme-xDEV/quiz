@@ -11,7 +11,7 @@ body {
 }
 
 #pseudo-background {
-    width: 90%; /* Ocupa boa parte da largura */
+    width: 80%; /* Ocupa boa parte da largura */
     min-height: 80vh; /* Tamanho vertical grande */
     margin: 10px auto; /* Reduz margem para mostrar mais do fundo */
     background-size: cover;
