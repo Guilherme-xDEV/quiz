@@ -34,7 +34,7 @@ body {
     max-width: 800px; /* Limita largura máxima */
     min-height: 90%; /* Ocupa 90% da altura do pseudo-background */
     height: auto; /* Expande com o conteúdo */
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
@@ -44,7 +44,7 @@ body {
 }
 
 #pergunta {
-    font-size: 26px; /* Aumenta tamanho da fonte da pergunta */
+    font-size: 24px; /* Aumenta tamanho da fonte da pergunta */
     margin-bottom: 30px; /* Mais espaço abaixo da pergunta */
     flex-shrink: 0; /* Evita que o texto encolha */
 }
@@ -80,7 +80,7 @@ body {
 .opcao button {
     display: block;
     width: 100%;
-    margin: 15px 0; /* Aumenta margem vertical */
+    margin: 10px 0; /* Aumenta margem vertical */
     padding: 15px; /* Aumenta padding para botões maiores */
     font-size: 18px; /* Aumenta tamanho da fonte */
     cursor: pointer;
