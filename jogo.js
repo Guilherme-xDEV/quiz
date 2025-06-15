@@ -214,10 +214,21 @@ function atualizarPontuacao() {
     document.getElementById("pontuacao").textContent = "Pontos: " + pontos;
 }
 
+/*
 function finalizarQuiz() {
     document.querySelector(".quiz-container").innerHTML = `
         <h2>Quiz Finalizado!</h2>
         <p>Sua pontuação: ${pontos} de ${perguntas.length}</p>
+    `;
+} */
+
+function finalizarQuiz() {
+    document.querySelector(".quiz-container").innerHTML = `
+        <div class="quiz-finalizado">
+            <h2 class="titulo-final">Quiz Finalizado!</h2>
+            <p class="pontuacao-final">Sua pontuação: ${pontos} de ${perguntas.length}</p>
+            <button class="button-final" onclick="window.location.href='index.html'">fazer novamente</button>
+        </div>
     `;
 }
 
