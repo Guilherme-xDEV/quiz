@@ -21,13 +21,13 @@ body {
   z-index: -1; /* Coloca as partículas atrás de outros elementos */
 }
 
-#caixa-introdução {
+#caixa-introducao {
   background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
-  width: 80%;
-  max-width: 600px; /* Limita a largura máxima para melhor legibilidade */
-  min-height: 70%;
+  width: 90%; /* Mais flexível para telas menores */
+  max-width: 600px; /* Limita a largura máxima */
+  min-height: 50%; /* Reduzido para evitar excesso de espaço */
   border-radius: 20px;
-  padding: 30px;
+  padding: 20px;
   display: flex;
   flex-direction: column; /* Organiza título e botões verticalmente */
   align-items: center; /* Centraliza conteúdo internamente */
@@ -38,13 +38,16 @@ body {
 h1 {
   text-align: center; /* Centraliza o título */
   color: #333; /* Cor mais escura para contraste */
-  margin-bottom: 20px; /* Espaço abaixo do título */
+  margin-bottom: 30px; /* Mais espaço abaixo do título */
+  font-size: 24px; /* Tamanho ajustado para legibilidade */
 }
 
 .button-container {
   display: flex;
+  flex-direction: row; /* Botões lado a lado por padrão */
+  gap: 20px; /* Espaçamento consistente entre botões */
   justify-content: center; /* Centraliza os botões */
-  gap: 20px; /* Espaço entre os botões */
+  width: 100%; /* Usa toda a largura disponível */
 }
 
 .button-styler {
@@ -52,29 +55,18 @@ h1 {
   background-color: aqua;
   font-size: 14px;
   border-radius: 10px;
-  padding: 12px 24px; /* Aumenta o padding para melhor clique */
+  padding: 12px 24px; /* Padding consistente */
   border: none; /* Remove borda padrão */
   cursor: pointer; /* Cursor de clique */
   transition: transform 0.2s, box-shadow 0.2s; /* Animação suave */
+  width: 100%; /* Botões ocupam largura total em telas menores */
+  max-width: 200px; /* Limita largura máxima */
 }
 
 .button-styler:hover {
   transform: scale(1.1); /* Aumenta ligeiramente ao passar o mouse */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao hover */
 }
-
-/*
-#btnPlayMusica {
-  padding: 10px;
-  margin-top: 20px;
-  font-size: 10px;
-  background-color: aqua;
-  color: black;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-*/
 
 #iconeMusica {
   font-size: 32px;
@@ -84,13 +76,12 @@ h1 {
   bottom: 20px;
   right: 20px;
   z-index: 1000;
- transition: transform 0.1s ease; 
+  transition: transform 0.1s ease;
 }
 
 #iconeMusica:hover {
   transform: scale(1.2);
 }
-
 
 /* Animação de entrada para a caixa */
 @keyframes fadeIn {
@@ -107,4 +98,30 @@ h1 {
 .fade-out {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 600px) {
+  #caixa-introducao {
+    width: 95%; /* Usa quase toda a largura */
+    padding: 15px; /* Reduz padding */
+    min-height: auto; /* Ajusta altura automaticamente */
+  }
+
+  h1 {
+    font-size: 18px; /* Reduz tamanho da fonte */
+    margin-bottom: 20px;
+  }
+
+  .button-container {
+    flex-direction: column; /* Empilha botões verticalmente */
+    gap: 15px; /* Espaçamento reduzido */
+    align-items: center; /* Centraliza botões */
+  }
+
+  .button-styler {
+    font-size: 12px; /* Reduz tamanho da fonte */
+    padding: 10px 20px; /* Reduz padding */
+    max-width: 250px; /* Ajusta largura máxima */
+  }
 }
