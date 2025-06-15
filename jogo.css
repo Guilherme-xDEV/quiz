@@ -227,6 +227,46 @@ body {
         font-size: 18px;
     }
 }
+/* modificação */
+.quiz-finalizado {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    margin-top: 20px;
+}
+
+.titulo-final {
+    color: #2E8B57;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.pontuacao-final {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.button-final {
+    color: black;
+    background-color: aqua;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 12px 24px;
+    /* Padding consistente */
+    border: none;
+    /* Remove borda padrão */
+    cursor: pointer;
+    /* Cursor de clique */
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* Animação suave */
+    width: 100%;
+    /* Botões ocupam largura total em telas menores */
+    max-width: 200px;
+    /* Limita largura máxima */
+}
 
 /*
 .balao {
