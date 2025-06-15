@@ -14,7 +14,6 @@ body {
     width: 90%; /* Mais largo para ocupar espaço */
     min-height: 80vh; /* Aumenta o tamanho vertical */
     margin: 20px auto; /* Reduz margem no topo */
-    background-image: url('https://i.imgur.com/1z5Z2bH.png');
     background-size: cover;
     background-position: center;
     background-color: rgb(25, 204, 195, 0.85);
