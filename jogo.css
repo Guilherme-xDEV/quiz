@@ -29,7 +29,7 @@ body {
     background-color: #fff;
     padding: 30px; /* Mais espaço interno */
     margin: 10px; /* Reduz margem interna */
-    margin-top: 50px;
+    /*margin-top: 50px; */
     width: 90%; /* Usa quase toda a largura do pseudo-background */
     max-width: 800px; /* Limita largura máxima */
     min-height: 90%; /* Ocupa 90% da altura do pseudo-background */
