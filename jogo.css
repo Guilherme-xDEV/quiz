@@ -11,9 +11,10 @@ body {
 }
 
 #pseudo-background {
-    width: 70%; /* Ocupa boa parte da largura */
-    min-height: 60vh; /* Tamanho vertical grande */
+    width: 90%; /* Ocupa boa parte da largura */
+    min-height: 80vh; /* Tamanho vertical grande */
     margin: 10px auto; /* Reduz margem para mostrar mais do fundo */
+    background-image: url('https://i.imgur.com/1z5Z2bH.png');
     background-size: cover;
     background-position: center;
     background-color: rgb(25, 204, 195, 0.85);
@@ -29,24 +30,28 @@ body {
     background-color: #fff;
     padding: 30px; /* Mais espaço interno */
     margin: 10px; /* Reduz margem interna */
-    width: 85%; /* Usa quase toda a largura do pseudo-background */
+    width: 98%; /* Usa quase toda a largura do pseudo-background */
     max-width: 800px; /* Limita largura máxima */
-    min-height: 80%; /* Ocupa 80% da altura do pseudo-background */
+    min-height: 90%; /* Ocupa 90% da altura do pseudo-background */
+    height: auto; /* Expande com o conteúdo */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Alinha conteúdo interno ao topo */
+    justify-content: space-between; /* Distribui espaço entre elementos */
+    flex-grow: 1; /* Expande para ocupar espaço disponível */
 }
 
 #pergunta {
-    font-size: 24px; /* Aumenta tamanho da fonte da pergunta */
-    margin-bottom: 25px; /* Mais espaço abaixo da pergunta */
+    font-size: 28px; /* Aumenta tamanho da fonte da pergunta */
+    margin-bottom: 30px; /* Mais espaço abaixo da pergunta */
+    flex-shrink: 0; /* Evita que o texto encolha */
 }
 
 .status {
-    margin-bottom: 25px; /* Mais espaço abaixo da barra de progresso */
+    margin-bottom: 30px; /* Mais espaço abaixo da barra de progresso */
+    flex-shrink: 0; /* Evita que encolha */
 }
 
 #barra-progresso {
@@ -65,17 +70,25 @@ body {
     transition: width 1.3s;
 }
 
+.opcao {
+    flex-grow: 1; /* Permite que os botões ocupem espaço */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinha botões para o final */
+}
+
 .opcao button {
     display: block;
     width: 100%;
     margin: 15px 0; /* Aumenta margem vertical */
     padding: 15px; /* Aumenta padding para botões maiores */
-    font-size: 20px; /* Aumenta tamanho da fonte */
+    font-size: 22px; /* Aumenta tamanho da fonte */
     cursor: pointer;
     border: none;
     border-radius: 5px;
     background-color: #007BFF;
     color: white;
+    flex-shrink: 0; /* Evita que os botões encolham */
 }
 
 .opcao button:hover {
@@ -83,14 +96,16 @@ body {
 }
 
 #resultado {
-    margin-top: 25px;
+    margin-top: 30px;
     font-weight: bold;
-    font-size: 20px; /* Aumenta tamanho da fonte */
+    font-size: 22px; /* Aumenta tamanho da fonte */
+    flex-shrink: 0; /* Evita que encolha */
 }
 
 #pontuacao {
     font-weight: bold;
-    font-size: 20px; /* Aumenta tamanho da fonte */
+    font-size: 22px; /* Aumenta tamanho da fonte */
+    flex-shrink: 0; /* Evita que encolha */
 }
 
 @keyframes pulse {
@@ -155,32 +170,32 @@ body {
 
     .quiz-container {
         width: 98%; /* Usa quase toda a largura */
-        min-height: 85%; /* Mais proporcional ao pseudo-background */
+        min-height: 95%; /* Ocupa mais espaço vertical */
         margin: 5px; /* Reduz margem */
         padding: 20px; /* Ajusta padding */
     }
 
     #pergunta {
-        font-size: 20px; /* Ajusta tamanho da fonte */
-        margin-bottom: 20px;
+        font-size: 24px; /* Ajusta tamanho da fonte */
+        margin-bottom: 25px;
     }
 
     .opcao button {
-        font-size: 18px; /* Ajusta tamanho da fonte */
+        font-size: 20px; /* Ajusta tamanho da fonte */
         padding: 12px;
         margin: 12px 0;
     }
 
     #pontuacao, #resultado {
-        font-size: 18px; /* Ajusta tamanho da fonte */
+        font-size: 20px; /* Ajusta tamanho da fonte */
     }
 
     .status {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
 }
 
-/* Media Query para telas muito pequenas (ex.: smartphones antigos) */
+/* Media Query para telas muito pequenas (ex.: iPhone SE 375px) */
 @media (max-width: 400px) {
     #pseudo-background {
         width: 98%; /* Usa quase toda a largura */
@@ -191,24 +206,24 @@ body {
 
     .quiz-container {
         width: 98%;
-        min-height: 90%; /* Mais proporcional ao pseudo-background */
+        min-height: 95%; /* Ocupa quase toda a altura disponível */
         margin: 5px;
         padding: 15px;
     }
 
     #pergunta {
-        font-size: 18px;
-        margin-bottom: 15px;
+        font-size: 20px;
+        margin-bottom: 20px;
     }
 
     .opcao button {
-        font-size: 16px;
+        font-size: 18px;
         padding: 10px;
         margin: 10px 0;
     }
 
     #pontuacao, #resultado {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
