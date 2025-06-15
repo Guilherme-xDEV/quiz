@@ -30,9 +30,9 @@ body {
     padding: 30px; /* Mais espaço interno */
     margin: 10px; /* Reduz margem interna */
     /*margin-top: 50px; */
-    width: 90%; /* Usa quase toda a largura do pseudo-background */
+    width: 85%; /* Usa quase toda a largura do pseudo-background */
     max-width: 800px; /* Limita largura máxima */
-    min-height: 90%; /* Ocupa 90% da altura do pseudo-background */
+    min-height: 85%; /* Ocupa 90% da altura do pseudo-background */
     height: auto; /* Expande com o conteúdo */
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
