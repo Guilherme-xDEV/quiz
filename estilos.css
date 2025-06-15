@@ -1,0 +1,181 @@
+/* 
+*{
+  font-family: 'Times New Roman';
+}
+
+body {
+  background-color: rgb(25, 204, 195);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#caixa-introdução {
+  background-color: #fff;
+  width: 80%;
+  height: 70%;
+  border-radius: 20px;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-styler {
+  color:black;
+  background-color: aqua;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 40px;
+}
+*/
+
+/* div {
+  display: flex; flex-direction: column; align-items: center; */
+
+/*. 
+1. display: flex;
+Transforma o elemento (div) em um container flexível.
+
+Todos os filhos diretos desse elemento viram itens flex.
+
+Habilita o uso das propriedades de Flexbox.
+
+2. flex-direction: column;
+Muda a direção do layout para coluna.
+
+Os itens flex (filhos) são organizados de cima para baixo, um abaixo do outro.
+
+Padrão sem essa propriedade: row (em linha, um ao lado do outro).
+
+3. align-items: center;
+Alinha os itens no eixo cruzado, ou seja, na horizontal (porque o flex-direction está como column).
+
+Faz com que todos os itens fiquem centralizados horizontalmente dentro do container. 
+
+4. justify-content: center;
+centraliza o conteúdo interior do elemento 
+}
+*/
+
+* {
+  font-family: 'Press Start 2P', cursive; /* Fonte temática para jogos */
+  box-sizing: border-box; /* Evita problemas com padding e bordas */
+}
+
+body {
+  background: linear-gradient(135deg, rgb(25, 204, 195), rgb(0, 150, 136)); /* Gradiente dinâmico */
+  min-height: 100vh; /* Garante que o body ocupe a tela inteira */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  margin: 0; /* Remove margens padrão */
+}
+
+#particles-js {
+  position: fixed; /* Faz as partículas cobrirem toda a tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca as partículas atrás de outros elementos */
+}
+
+#caixa-introdução {
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+  width: 80%;
+  max-width: 600px; /* Limita a largura máxima para melhor legibilidade */
+  min-height: 70%;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column; /* Organiza título e botões verticalmente */
+  align-items: center; /* Centraliza conteúdo internamente */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave para profundidade */
+  animation: fadeIn 1s ease-in; /* Animação de entrada */
+}
+
+h1 {
+  text-align: center; /* Centraliza o título */
+  color: #333; /* Cor mais escura para contraste */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centraliza os botões */
+  gap: 20px; /* Espaço entre os botões */
+}
+
+.button-styler {
+  color: black;
+  background-color: aqua;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 12px 24px; /* Aumenta o padding para melhor clique */
+  border: none; /* Remove borda padrão */
+  cursor: pointer; /* Cursor de clique */
+  transition: transform 0.2s, box-shadow 0.2s; /* Animação suave */
+}
+
+.button-styler:hover {
+  transform: scale(1.1); /* Aumenta ligeiramente ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao hover */
+}
+
+/*
+#btnPlayMusica {
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 10px;
+  background-color: aqua;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+*/
+
+#iconeMusica {
+  font-size: 32px;
+  color: #000000;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+ transition: transform 0.1s ease; 
+}
+
+#iconeMusica:hover {
+  transform: scale(1.2);
+}
+
+
+/* Animação de entrada para a caixa */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}

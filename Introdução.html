@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div id="caixa-introdução">
+        <h1 id="título">Bem Vindo ao Jogo da Crase!</h1>
+        <div  class="button-container">
+        <button class="button-styler" id="btn-jogar" onclick="window.location.href='jogo.html'">Jogar</button>
+        <button class="button-styler" onclick="window.location.href='gramatica.html'">Revisar regras gramaticais </button>
+        </div>
+        <!-- <button id="btnPlayMusica">Tocar Música</button> -->
+        <i id="iconeMusica" class="fas fa-music"></i>
+
+        <audio id="musicaFundo" loop>
+            <source src="quiz-music-158558.mp3" type="audio/mpeg">
+            Seu navegador não suporta áudio.
+        </audio>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+    <script>
+        document.getElementById('btn-jogar').addEventListener('click', () => {
+            document.body.classList.add('fade-out'); // Adiciona a classe para o efeito
+            setTimeout(() => {
+                window.location.href = 'jogo.html'; // Redireciona após 500ms
+            }, 500);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const icone = document.getElementById("iconeMusica");
+            const musica = document.getElementById("musicaFundo");
+
+            icone.addEventListener("click", function () {
+                musica.play();
+                icone.style.display = "none"; // Esconde o ícone após clicar
+            });
+        });
+    </script>
+</body>
+
+</html>

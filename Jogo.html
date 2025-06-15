@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Simples</title>
+    <link rel="stylesheet" href="jogo.css">
+</head>
+<body>
+
+<div id="pseudo-background">
+    <div class="quiz-container">
+    <div class="status">
+        <div id="barra-progresso">
+            <div id="progresso"></div>
+        </div>
+        <p id="pontuacao">Pontuação: 0</p>
+    </div>
+    
+    <h2 id="pergunta">Pergunta?</h2>
+
+    <div class="opcao">
+        <button onclick="verificarResposta(this)"></button>
+        <button onclick="verificarResposta(this)"></button>
+        <button onclick="verificarResposta(this)"></button>
+        <button onclick="verificarResposta(this)"></button>
+    </div>
+</div>
+
+    <p id="resultado"></p>
+</div>
+
+<script src="jogo.js"></script>
+</body>
+</html>

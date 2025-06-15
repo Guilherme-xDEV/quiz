@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://www.brazilts.com.br/blog/wp-content/uploads/2023/10/colecao-abundante-de-livros-antigos-em-prateleiras-de-madeira-geradas-por-ia-1.jpg");
+        }
+    
+        #container {
+            width: 70%;
+            height: 70%;
+            margin: 50px auto;
+            background-color: rgba(65, 194, 187, 0.85);    
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .exemplos{
+            font-weight: 400;
+            color: rgb(3, 53, 3);
+            font-style:oblique
+        }
+
+        .exemplos:before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 50%; /* transforma o quadrado em círculo */
+            margin-right: 8px;  /* espaço entre a bola e o texto */
+            vertical-align: middle; /* alinha com o texto */
+        }
+
+        
+        .button-styler {
+            color: black;
+            background-color: aqua;
+            font-size: 14px;
+            border-radius: 10px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            margin-left: 90%;
+        }
+
+        .button-styler:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 style="text-align: center; text-decoration: underline;">Principais Regras de Crase</h1>
+        <h2 style="margin-left: 10px;">Quando usar a crase:</h2>
+        <p>1. Antes de palavras femininas</p>
+        <p class="exemplos">Ex: Fui à escola.</p>
+        <p>2. Antes de pronomes possessivos femininos (quando explícitos)</p>
+        <p class="exemplos">Ex: Entreguei a carta à minha mãe.</p>
+        <p>3. Antes da palavra "aquela", "aquelas", "aquele", "aquilo" (com preposição)</p>
+        <p class="exemplos">Ex: Refiro-me àquela situação.</p>
+        <p>4. Em locuções prepositivas, conjuntivas ou adverbiais femininas</p>
+        <p class="exemplos">Ex: À medida que (conjuntiva)</p>
+        <p>5. Antes de nomes de cidades ou países femininos que admitem o artigo "a"</p>
+        <p class="exemplos">Fui à Itália, Cheguei à Bahia.</p>
+    
+        <h2 style="margin-left: 10px;">Quando NÃO usar a crase:</h2>
+        <p>1. Antes de palavras masculinas</p>
+        <p class="exemplos">Ex: Fui a pé, Cheguei a cavalo.</p>
+        <p>2. Antes de verbos</p>
+        <p class="exemplos">Ex: Começou a estudar cedo.</p>
+        <p>3. Antes de pronomes pessoais, de tratamento, indefinidos e demonstrativos (alguns casos)</p>
+        <p class="exemplos">Ex: Entreguei a ela o livro. (Sem crase!)</p>
+        <p>4. Com palavras repetidas</p>
+        <p class="exemplos">Ex: Cara a cara, passo a passo (sem artigo, só preposição → sem crase).</p>
+        <p>5. Antes de nomes próprios femininos que não usam artigo</p>
+        <p class="exemplos">Ex: Escrevi a Maria. (Sem crase, pois não se diz a a Maria.)</p>
+        <button class="button-styler" id="btn-jogar" onclick="window.location.href='jogo.html'">Jogar</button>
+    </div>
+    
+</body>
+</html>

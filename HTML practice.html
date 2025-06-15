@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div id="caixa-introdução">
+        <h1 id="título">Bem Vindo ao Jogo da Crase!</h1>
+        <div  class="button-container">
+        <button class="button-styler"  onclick="window.location.href='jogo.html'">Jogar</button>
+        <button class="button-styler">Revisar regras gramaticais</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+    <script>
+  document.getElementById('btn-jogar').addEventListener('click', () => {
+    document.body.classList.add('fade-out'); // Adiciona a classe para o efeito
+    setTimeout(() => {
+      window.location.href = 'quiz.html'; // Redireciona após 500ms
+    }, 500);
+  });
+</script>
+</body>
+
+</html>
