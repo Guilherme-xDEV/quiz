@@ -21,7 +21,6 @@ body {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: flex-start; /* Alinha conteúdo ao topo */
-    margin-top: 50px;
     padding: 10px; /* Reduz padding para mostrar mais do fundo */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
 }
@@ -30,6 +29,7 @@ body {
     background-color: #fff;
     padding: 30px; /* Mais espaço interno */
     margin: 10px; /* Reduz margem interna */
+    margin-top: 50px;
     width: 90%; /* Usa quase toda a largura do pseudo-background */
     max-width: 800px; /* Limita largura máxima */
     min-height: 90%; /* Ocupa 90% da altura do pseudo-background */
