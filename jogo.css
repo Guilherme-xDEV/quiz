@@ -44,7 +44,7 @@ body {
 }
 
 #pergunta {
-    font-size: 28px; /* Aumenta tamanho da fonte da pergunta */
+    font-size: 26px; /* Aumenta tamanho da fonte da pergunta */
     margin-bottom: 30px; /* Mais espaço abaixo da pergunta */
     flex-shrink: 0; /* Evita que o texto encolha */
 }
@@ -82,7 +82,7 @@ body {
     width: 100%;
     margin: 15px 0; /* Aumenta margem vertical */
     padding: 15px; /* Aumenta padding para botões maiores */
-    font-size: 22px; /* Aumenta tamanho da fonte */
+    font-size: 18px; /* Aumenta tamanho da fonte */
     cursor: pointer;
     border: none;
     border-radius: 5px;
