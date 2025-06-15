@@ -20,7 +20,7 @@ body {
     border-radius: 20px;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
-    align-items: flex-start; /* Alinha conteúdo ao topo */
+    align-items: center; /* Alinha conteúdo ao topo flex-start; */
     padding: 10px; /* Reduz padding para mostrar mais do fundo */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
 }
