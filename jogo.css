@@ -12,7 +12,7 @@ body {
 
 #pseudo-background {
     width: 70%; /* Ocupa boa parte da largura */
-    min-height: 80vh; /* Tamanho vertical grande */
+    min-height: 60vh; /* Tamanho vertical grande */
     margin: 10px auto; /* Reduz margem para mostrar mais do fundo */
     background-size: cover;
     background-position: center;
