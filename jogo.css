@@ -20,24 +20,33 @@ body {
     border-radius: 20px;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    align-items: flex-start; /* Alinha conteúdo ao topo */
     padding: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
 }
 
 .quiz-container {
     background-color: #fff;
-    padding: 20px;
-    margin: 20px; /* Margem interna para evitar colisão */
+    padding: 30px; /* Aumenta padding para mais espaço interno */
+    margin: 20px; /* Margem interna */
     width: 100%; /* Usa toda a largura disponível */
     max-width: 800px; /* Limita largura máxima */
+    min-height: 400px; /* Garante tamanho vertical mínimo */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha conteúdo interno ao topo */
+}
+
+#pergunta {
+    font-size: 20px; /* Aumenta tamanho da fonte da pergunta */
+    margin-bottom: 20px; /* Espaço abaixo da pergunta */
 }
 
 .status {
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* Aumenta espaço abaixo da barra de progresso */
 }
 
 #barra-progresso {
@@ -46,7 +55,7 @@ body {
     height: 20px;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 #progresso {
@@ -59,9 +68,9 @@ body {
 .opcao button {
     display: block;
     width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 16px;
+    margin: 12px 0; /* Aumenta margem vertical */
+    padding: 12px; /* Aumenta padding para botões maiores */
+    font-size: 18px; /* Aumenta tamanho da fonte */
     cursor: pointer;
     border: none;
     border-radius: 5px;
@@ -74,12 +83,14 @@ body {
 }
 
 #resultado {
-    margin-top: 15px;
+    margin-top: 20px;
     font-weight: bold;
+    font-size: 18px; /* Aumenta tamanho da fonte */
 }
 
 #pontuacao {
     font-weight: bold;
+    font-size: 18px; /* Aumenta tamanho da fonte */
 }
 
 @keyframes pulse {
@@ -94,7 +105,7 @@ body {
     50% { transform: translateX(5px); }
     75% { transform: translateX(-5px); }
     100% { transform: translateX(0); }
-} 
+}
 
 .balao {
     position: fixed;
@@ -137,29 +148,35 @@ body {
 @media (max-width: 600px) {
     #pseudo-background {
         width: 95%; /* Usa quase toda a largura */
-        min-height: 85vh; /* Aumenta ainda mais o tamanho vertical */
+        min-height: 85vh; /* Aumenta tamanho vertical */
         margin: 10px auto; /* Reduz margem no topo */
         padding: 15px;
     }
 
     .quiz-container {
         width: 95%; /* Usa quase toda a largura */
-        margin: 10px; /* Reduz margem */
-        padding: 15px; /* Reduz padding */
-    }
-
-    .opcao button {
-        font-size: 14px; /* Reduz tamanho da fonte */
-        padding: 8px;
-        margin: 8px 0; /* Ajusta margem dos botões */
+        min-height: 500px; /* Aumenta tamanho vertical */
+        margin: 10px;
+        padding: 20px;
     }
 
     #pergunta {
-        font-size: 16px; /* Reduz tamanho da fonte da pergunta */
+        font-size: 18px; /* Ajusta tamanho da fonte */
+        margin-bottom: 15px;
+    }
+
+    .opcao button {
+        font-size: 16px; /* Ajusta tamanho da fonte */
+        padding: 10px;
+        margin: 10px 0;
     }
 
     #pontuacao, #resultado {
-        font-size: 14px; /* Reduz tamanho da fonte */
+        font-size: 16px; /* Ajusta tamanho da fonte */
+    }
+
+    .status {
+        margin-bottom: 15px;
     }
 }
 
@@ -173,22 +190,24 @@ body {
 
     .quiz-container {
         width: 98%;
+        min-height: 450px; /* Ajusta tamanho vertical */
         margin: 5px;
-        padding: 10px;
-    }
-
-    .opcao button {
-        font-size: 12px;
-        padding: 6px;
-        margin: 6px 0;
+        padding: 15px;
     }
 
     #pergunta {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .opcao button {
         font-size: 14px;
+        padding: 8px;
+        margin: 8px 0;
     }
 
     #pontuacao, #resultado {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
